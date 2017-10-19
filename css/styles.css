@@ -1,0 +1,171 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.txt-white {
+  color: #FFF;
+}
+
+.txt-orange {
+  color: #f15429;
+}
+
+.banner {
+  background-image: url('/images/backgrounds/landing.jpg');
+}
+
+.img-border {
+  border-style: solid;
+  border-width: 20px;
+  border-color: #F1F1F1;
+  box-shadow: 1px 7px 60px -2px rgba(0, 0, 0, 0.75);
+}
+
+.menu-item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.breakfast {
+  background-image: url('../img/breakfast.jpg');
+}
+
+.lunch {
+  background-image: url('../img/dinner2.jpg');
+}
+
+.dinner {
+  background-image: url('../img/dinner.jpg');
+}
+
+.orng {
+  background: #F15A29;
+}
+
+.email_panel {
+  background-image: url('../img/subscribe.jpg');
+  padding: 20px;
+}
+
+.tab-panel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 50px;
+  background-image: url('../img/foodsBg.jpg');
+}
+
+.tab-pane {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.footer-menu {
+  padding: 20px;
+}
+
+.img-shp {
+  margin: 10px;
+}
+
+.img-shp img {
+  border-radius: 10px;
+}
+
+.space {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pdng {
+  padding: 40px;
+}
+
+#happy {
+  padding: 5.85%;
+}
+
+#party {
+  background: #F15A29;
+  padding: 5.85%;
+}
+
+
+/* The Overlay (background) */
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #F15A29;
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #818181;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

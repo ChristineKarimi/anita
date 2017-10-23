@@ -1,6 +1,5 @@
-#Portfolio
+#Anita's Kitchen
 
-#### This my Portfolio that i've built using softwares such as Bootstrap to give a brief descriptio about myself.
 
 #### By Christine Karimi
 

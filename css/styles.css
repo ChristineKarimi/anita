@@ -160,7 +160,7 @@ background-color: rgba(244, 171, 46, 0.89)
 background-color: orange;
 }
 
-.food{
+.carousel{
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 50px;
@@ -169,7 +169,7 @@ background-color: orange;
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
-  
+
 }
 
 .email_panel{

@@ -1,7 +1,8 @@
 
 .bg-image {
-  width: 100%
-  height: 100px;
+  width: 50%
+  height: 80px;
+  width: auto;
 }
 .middle {
   position: absolute;
@@ -103,4 +104,32 @@ background-attachment: fixed;
   background-color:red;
   text-align:center;
   background-color: #F15B29;
+}
+.images {
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 20px;
+  box-shadow:0 0 6px 6px #F2F2F2;
+}
+.footer-menu {
+  padding: 20px;
+  background-color:red;
+  text-align:center;
+  background-color: #F15B29;
+}
+.email_panel{
+  text-align: center;
+background-image: url(../images/backgrounds/subscribe.jpg);
+padding: 70px;
+background-attachment: fixed;
+}
+.food{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 50px;
+  background-image: url(../images/backgrounds/foodsBg.jpg);
+  background-attachment: fixed;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

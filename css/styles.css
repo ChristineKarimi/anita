@@ -1,9 +1,12 @@
-
-.bg-image {
-  width: 50%
-  height: 80px;
-  width: auto;
+body{
+  overflow-x: hidden;
 }
+.bg-image {
+  width: 100% ;
+  height: 500px;
+
+}
+
 .middle {
   position: absolute;
   margin-top: 100px;
@@ -13,45 +16,47 @@
   color: white;
   text-align: center;
 }
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 350px;
-    background-color: #f1f1f1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  background-color: #f1f1f1;
 }
 
 li a {
-    display: block;
-    color: #000;
-    padding: 40.5px 50px;
-    text-decoration: none;
+  display: block;
+  color: #000;
+  padding: 25px;
+  text-decoration: none;
 }
 
 /* Change the link color on hover */
+
 li a:hover {
-    background-color: #F15A29;
-    color: white;
-    text-decoration: none;
+  background-color: #F15A29;
+  color: white;
+  text-decoration: none;
 }
-#fastfood{
+
+#fastfood {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 
 .txt-white {
   color: #FFF;
 }
 
 .breakfast {
-
-    text-align: center;
+  text-align: center;
 }
-#b-fast:hover{
+
+#b-fast:hover {
   bottom: 0;
   right: 0;
-background:rgba(250,250,250,0.5);
+  background: rgba(250, 250, 250, 0.5);
   opacity: 0.5;
   color: black;
   overflow: hidden;
@@ -61,10 +66,11 @@ background:rgba(250,250,250,0.5);
 .lunch {
   text-align: center;
 }
-#lunch:hover{
+
+#lunch:hover {
   bottom: 0;
   right: 0;
-background:rgba(250,250,250,0.5);
+  background: rgba(250, 250, 250, 0.5);
   opacity: 0.5;
   color: black;
   overflow: hidden;
@@ -74,16 +80,18 @@ background:rgba(250,250,250,0.5);
 .dinner {
   text-align: center;
 }
-#dinner:hover{
+
+#dinner:hover {
   bottom: 0;
   right: 0;
-background:rgba(250,250,250,0.5);
+  background: rgba(250, 250, 250, 0.5);
   opacity: 0.5;
   color: black;
   overflow: hidden;
   transition: .5s ease;
 }
-.carousel{
+
+.carousel {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 50px;
@@ -92,38 +100,43 @@ background:rgba(250,250,250,0.5);
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
+}
 
-}
-.email_panel{
+.email_panel {
   text-align: center;
-padding: 70px;
-background-attachment: fixed;
+  padding: 70px;
+  background-attachment: fixed;
 }
+
 .footer-menu {
   padding: 20px;
-  background-color:red;
-  text-align:center;
+  background-color: red;
+  text-align: center;
   background-color: #F15B29;
 }
+
 .images {
   border-style: solid;
   border-color: #FFFFFF;
   border-width: 20px;
-  box-shadow:0 0 6px 6px #F2F2F2;
+  box-shadow: 0 0 6px 6px #F2F2F2;
 }
+
 .footer-menu {
   padding: 20px;
-  background-color:red;
-  text-align:center;
+  background-color: red;
+  text-align: center;
   background-color: #F15B29;
 }
-.email_panel{
+
+.email_panel {
   text-align: center;
-background-image: url(../images/backgrounds/subscribe.jpg);
-padding: 70px;
-background-attachment: fixed;
+  background-image: url(../images/backgrounds/subscribe.jpg);
+  padding: 70px;
+  background-attachment: fixed;
 }
-.foodbar{
+
+.foodbar {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 50px;
@@ -133,3 +146,133 @@ background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #F15A29;
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #818181;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+div#karimi{
+  height: 500px;
+  background-image: url("../images/backgrounds/foodsBg.jpg");
+  padding: 50px;
+      margin: 0px auto;
+}
+/*karis + karimi = something awesome
+karis + karimi = something awesome
+karis + karimi = something awesome
+karis + karimi = something awesome
+karis + karimi = something awesome*/
+
+
+.nav-tabs>li {
+	    float: left;
+	    margin-bottom: -1px;
+	    width: 25%;
+	    text-align: center;
+	}
+	div.christine{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #e2521a;
+	}
+	a{
+		border: 0px;
+		font-weight: bold;
+	}
+	span#spanleft{
+		    position: absolute;
+    color: red;
+    font-size: 25px;
+    /* top: -5px; */
+    margin-top: 70px;
+    margin-left: -10px;
+	}
+	span#spanright{
+		    position: absolute;
+    font-size: 25px;
+    color: red;
+    margin-top: 70px;
+	}
+	div#divcover{
+		/*background-image: url('foodsBg.jpg');*/
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 50px;
+    margin: 0px auto;
+	}
+
+/*karis + karimi = something awesome
+karis + karimi = something awesome
+karis + karimi = something awesome
+karis + karimi = something awesome
+karis + karimi = something awesome*/

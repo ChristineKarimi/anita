@@ -13,7 +13,20 @@
 
 <body>
 
+  <div class="headernav">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+
   <img class="bg-image" src="images/backgrounds/landing.jpg">
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">events</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
   <div class="middle">
     <img src="images/logoBig.png" alt="logo" class="text-center">
     <br/>
@@ -35,14 +48,17 @@
             <div id="b-fast"
             <div class="col-md-3">
               <img src="images/foodtop/breakfast.jpg">
+              <a class="one"> Breakfast</a>
             </div>
             <div id="lunch"
             <div class="col-md-3" >
               <img src="images/foodtop/lunch.jpg">
+              <a class="one"> Lunch</a>
             </div>
             <div id="dinner"
               <div class="col-md-3">
               <img src="images/foodtop/dinner.jpg">
+              <a class="one"> Dinner</a>
             </div>
     </div>
 <br></br>
@@ -224,6 +240,15 @@ l  <div class="row well">
 </div>
 
 <!-- <script type="text/javascript" src="css/jquery-3.2.1.js"></script> -->
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

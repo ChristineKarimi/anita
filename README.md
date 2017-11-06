@@ -1,4 +1,4 @@
-#######Anita's Kitchen
+# ANITA'S KITCHEN
 
 
 #### By Christine Karimi
@@ -9,7 +9,7 @@ week 2 Indepedent Project (IP2).
 
 ## Setup/Installation Requirements
 
-* Clone the project and open the indx.html file using Google Chrome.
+* Clone the repo and open the index.html file using Google Chrome.
 
 ## Technologies Used
 
